@@ -1,0 +1,449 @@
+
+    ::selection{
+        background-color: red;
+    }
+    body {
+    margin: 0 auto;
+    text-align: center;
+    width: 84.3em;
+    background-color: rgb(43, 41, 41);
+}
+
+.index {
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    /* sağ üst ve sol üst için 10px */
+    z-index: 1;
+
+
+}
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*
+    yazı fontunu belirledim
+    */
+    text-decoration: none;
+    color: black;
+    text-shadow: 0 0 5px aqua;
+    /* yazı arkasına gölge ekledim. box-shadow kullanınca yazı boyutunda bi kutu oluşturuyor ve gölgenin görüntüsünü bozuyor */
+}
+
+li {
+    list-style-type: none;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+    /* yazıları büyüttüm */
+    position: relative;
+    /* alt çizgi vermek için göreceli pozisyon verdim */
+    height: 20px;
+    /* 
+    alt çizgi 20px aşağıda olduğu için 20px lik bi yükseklik verdim */
+}
+
+.ust {
+    background-color: gray;
+    height: 3em;
+    /* px vermek yerine em verdim çünkü px değerleri her pc monitörüne göre sayfanın görünümü değişir fakat em değeri olabildiğince
+    daha az değişir
+     */
+    display: flex;
+    /* üst liste menüsünü yan yana arasında boşluk olmadan sola yaslanmış şekilde yan yana dizdim */
+    justify-content: space-between;
+    /* daha sonra bu lsitelerin sıralanmasası için justify-content kullandımn  */
+    padding: 10px;
+    /* aralarına boşluk koydum ve ayrıca ilk liste ve son listenin başlangıç noktasını değiştirdim */
+    border-radius: 10px;
+}
+
+#mka::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s ease-out;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(111, 241, 71);
+}
+
+
+#mka:hover::before {
+    width: 100%;
+}
+
+#mka::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s ease-out;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(111, 241, 71);
+}
+
+
+#mka:hover::after {
+    width: 100%;
+}
+
+
+
+#hayati::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    box-shadow: 2px 2px 2px;
+    transition: 2s;
+    background-color: rgb(111, 241, 71);
+}
+
+#hayati:hover::before {
+    box-shadow: 2px 2px 2px;
+    width: 100%;
+}
+
+
+#hayati::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s ease-out;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(111, 241, 71);
+}
+
+
+#hayati:hover::after {
+    width: 100%;
+}
+
+
+
+#savas::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s ease-out;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(111, 241, 71);
+}
+
+#savas:hover::before {
+    width: 100%;
+    box-shadow: 2px 2px 2px;
+
+}
+
+
+#savas::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s ease-out;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(111, 241, 71);
+}
+
+
+#savas:hover::after {
+    width: 100%;
+}
+
+#ok::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s ease-out;
+    background-color: rgb(111, 241, 71);
+    box-shadow: 2px 2px 2px;
+
+}
+
+#ok:hover::before {
+    width: 100%;
+    box-shadow: 2px 2px 2px;
+}
+
+#ok::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s ease-out;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(111, 241, 71);
+}
+
+#ok:hover::after {
+    width: 100%;
+}
+
+
+#fazla::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s ease-out;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(111, 241, 71);
+}
+
+#fazla:hover::before {
+    box-shadow: 2px 2px 2px;
+    width: 100%;
+}
+
+#fazla::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 0;
+    height: 2px;
+    transition: width 1.5s ease-out;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(111, 241, 71);
+}
+
+
+#fazla:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+/* dokununca alt ve üst çizgi ekledim ve bunu tüm listelere ekledim. (kodları kendim yazdım sadece biraz yardım aldım) */
+
+
+
+.foto {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+#foto1,
+#foto2 {
+    width: 20em;
+}
+
+.alt {
+    margin-top: 120px;
+    width: 100%;
+    background-color: rgb(114, 108, 108);
+    display: flex;
+    justify-content: center;
+}
+
+.alt li {
+    padding: 5px;
+}
+
+.alt a {
+    text-shadow: 2px 2px 1px black;
+    color: white;
+}
+
+.bilgi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bilgi div {
+    background-color: rgb(78, 82, 78);
+    margin-top: 100px;
+    width: 25em;
+    border-radius: 10px;
+}
+
+.bilgi li {
+    height: auto;
+    background-color: rgb(19, 22, 24);
+    margin-top: 15px;
+}
+
+.bilgi div li a {
+    text-shadow: 0 0 5px rgb(59, 238, 59);
+}
+
+
+
+
+.bilgi li a::first-line {
+    text-shadow: 0 0 5px black;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#ph,
+#ps,
+#pk {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 5px gray;
+}
+
+
+
+
+/* hayat dosyası  */
+
+.hayat-icerik p {
+    color: wheat;
+    font-size: 20px;
+}
+
+.hayat-icerik h3 {
+    color: white;
+    margin-left: 15px;
+}
+
+.hayat-icerik img {
+    margin-top: 50px;
+    width: 350px;
+}
+
+.hayat-icerik i {
+    font-size: 15px;
+    color: gray;
+}
+
+/* hayat dosyası  */
+
+
+
+
+
+/* savaş dosyası */
+
+.savas-icerik{
+    padding: 15px;
+}
+
+h2 {
+    float: left;
+    margin-left: 20px;
+}
+
+* {
+    color: wheat;
+}
+
+li,
+p {
+    color: wheat;
+}
+
+
+.savas-icerik p {
+    color: wheat;
+    font-size: 20px;
+}
+
+.savas-icerik h3{
+    color: white;
+}
+.savas-icerik img {
+    margin-top: 50px;
+    width: 350px;
+}
+
+.savas-icerik i {
+    font-size: 15px;
+    color: gray;
+}
+
+/* savaş dosyası */
+
+
+/* ok dosyası */
+
+.ok-icerik p {
+    color: wheat;
+    font-size: 20px;
+}
+
+.ok-icerik h3 {
+    color: white;
+    float: left;
+}
+
+.ok-icerik img {
+    width: 350px;
+}
+
+/* ok dosyası */
+
+
+
+/* fazla dosyası */
+
+.fazla-icerik p {
+    font-size: 18px;
+}
+
+* {
+    color: wheat;
+}
+
+
+img
+/*:not(.ornek) seçicisi bu id ye sahip fotoğrafı hariç kılarak bu stili bu fotoğrafa uygulamaz*/
+    {
+    width: 250px;
+    height: 300px;
+}
+
+a img{
+    width: 200px;
+    height: 50px;
+}
+
+table{
+    margin-left: 20%;
+}
+
+td[colspan="3"]{
+    color: white;
+}
+
+tr:nth-child(2n){
+    background-color: white;
+}
+
+tr:nth-child(2n) td{
+    color: black;
+}
+
+
+/* fazla dosyası */
+
+
