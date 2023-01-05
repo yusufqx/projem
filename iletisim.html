@@ -14,7 +14,8 @@
 			<h2>İletişim Kayıt Formu</h2>
 			<form>
 				<input type="text" name="username" placeholder="Adınız Ve Soy Adınız" />
-				<input type="email" name="email" placeholder="E-postanız" />
+				<br>
+				<input type="email" name="email" placeholder="E-postanız" /><br><br>
                 <textarea placeholder="İletinizi Veya Şikayetinizi Giriniz"></textarea>
                 <br><br>
 				<button><a href="#">GÖNDER</a></button>
@@ -39,7 +40,7 @@ body{
 	align-items: center;
 
 }
-
+ 
 textarea{
     max-width: 800px;
     min-width: 400px;
@@ -53,20 +54,26 @@ textarea{
     margin: 50px;
 	background-color: white;
 	padding: 40px;
+	border-radius: 20px;
 }
 
 .kutu h2{
 	color: teal;
 }
 
+ 
 input[type="text"], input[type="email"]{
-	width: 100%;
+    width: 500px;
+	border-radius: 10px;
+	border: none;
 	box-sizing: border-box;
 	margin: 15px 0px;
 	padding: 12px 20px;
-
 }
-
+input:hover{
+	transition: 1.5s;
+	background-color: aqua;
+}
 button{
 	margin: 15px 0px;
 	padding: 20px;
@@ -74,6 +81,7 @@ button{
     width: 125px;
     height: 60px;
 	color: black;
+	background-color: grey;
 	border: none;
 }
 
